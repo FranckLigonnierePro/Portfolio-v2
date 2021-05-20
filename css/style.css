@@ -308,6 +308,32 @@ section h1{
     font-size: 600%;
 }
 
+.carousel{
+    margin: 0 15%;
+}
+.carousel .carousel-inner {
+    height: 500px;
+}
+.carousel-item img{
+    position: absolute;
+    object-fit:cover;
+    top: 0;
+    left: 0;
+    min-height: 500px;
+    opacity: (0.5);
+    
+    
+}
+.carousel-item img:hover{
+    position: absolute;
+    object-fit:cover;
+    top: 0;
+    left: 0;
+    min-height: 500px;   
+}
+
+
+
 @media screen and (max-width:767px) {
     
     .home-title h1{
