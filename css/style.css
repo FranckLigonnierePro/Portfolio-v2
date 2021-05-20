@@ -53,6 +53,12 @@ h1{
 }
 
 h2{
+    
+    font-family: 'aldo_the_apacheregular', Arial, sans-serif;
+    color: #fff;
+}
+
+h3{
     font-family: 'Lato', sans-serif;
     color: #fff;
 }
@@ -65,19 +71,55 @@ a{
     color:#fff;
 }
 
+section{
+    background-image: url(/images/noisebg.jpg);
+    height: 100vh;
+    position:center
+}
+
 
 /* HEADER NAVBAR
 ============================================= */
 
-.navborder{
-    border: 2px solid #fff;
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='3' stroke-linecap='square' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+  
+.custom-toggler.navbar-toggler {
+    border-color: rgba(255, 102, 204, 0);
+  } 
+
+.custom-toggler:active{
+    outline: none !important;
+    box-shadow: none;
+  }
+.nav-brand{
+    margin-left:0px !important;
+}
+.navbar{
+    background-color: rgba(14, 14, 14, 0.5);  
 }
 
-.navbar a{
+.navbar .navbar-nav a{
     font-family: 'aldo_the_apacheregular', Arial, sans-serif;
     font-size: 150%;
-    margin: 0px 20px;
+    margin: 0px 20px 0px 0px;
     color: #fff !important;
+    overflow: hidden;
+    background: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255) 50%, rgba(6, 14, 39, 0) 50%);
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 0.5s ease;
+}
+
+.navbar .navbar-nav a:hover{
+    background-position: 0 100%;
+    color:rgb(169, 19, 26) !important;
+}
+
+.navbar-brand{
+    border: 2px solid white;
+    padding: 5px 5px 5px 5px;
 }
 
 
@@ -91,12 +133,14 @@ a{
     top:30%;
     left: 0;
     position: fixed;
+    z-index: 1;
 }
 
 .socialflex{
     display: flex;
     flex-direction: column;
     text-align: center;
+    
 }
 
 .socialflex a{
@@ -105,12 +149,14 @@ a{
     border: 2px solid #fff;
     color: #fff;
     transition: all 0.5s;
+  
 }
 
 .socialflex a:hover{
     color: rgb(169, 19, 26);
     background: #fff;
     transition: all 0.5s;
+    
 }
 
 
@@ -134,6 +180,7 @@ header{
     font-family: 'aldo_the_apacheregular', Arial, sans-serif;
     color: #fff;
     font-size: 500%;
+    text-align: left;
 }
 
 .home-title h2{
@@ -164,8 +211,13 @@ header{
     letter-spacing: 2px;
     font-size: 150%;
     text-decoration: none;
-    margin: 30px;
-    margin-top: 30px;
+    margin: 10px;
+    margin-top: 10px;
+}
+
+.btn:active{
+    outline: none !important;
+    box-shadow: none;  
 }
 
 .btn-full{
@@ -201,9 +253,81 @@ header{
     transition: all 0.5s;
 }
 
-section{
-    background-image: url(/images/noisebg.jpg);
-    height: 100vh;
-    position:center
 
+/* HEADER BUTTON SCROLL ANIMATION
+============================================= */
+
+.scroll-down{
+    height: 50px;
+    width: 30px;
+    border: 2px solid #fff;
+    position: absolute;
+    left:49%;
+    bottom:20px;
+    cursor: pointer;
+}
+
+.scroll-down::before,
+.scroll-down::after{
+    content: '';
+    position:absolute;
+    top:20%;
+    left:50%;
+    border: 2px solid #fff;
+    height: 10px;
+    width: 10px;
+    transform: translate(-50%, -50%) rotate(45deg);
+    border-top: transparent;
+    border-left: transparent;
+    animation: scroll-down 1s ease-in-out infinite;
+}
+
+.scroll-down::after{
+    top: 30%;
+}
+
+@keyframes scroll-down{
+    0%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 1;
+    }
+    60%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        top:90%;
+    }
+}
+
+
+/* HEADER BUTTON SCROLL ANIMATION
+============================================= */
+
+
+section h1{
+    text-align: center ;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    font-size: 600%;
+}
+
+@media screen and (max-width:767px) {
+    
+    .home-title h1{
+        
+        font-size: 350%;
+       
+    }
+    .home-title h2{
+        font-size: 350%;
+        margin-left: 0px;
+    }
+
+    section h1{
+        font-size: 350%;
+    }
+    
 }
