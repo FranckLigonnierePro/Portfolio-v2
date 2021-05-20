@@ -41,12 +41,6 @@ html{
     background-color: rgb(7, 7, 7);
 }
 
-/*@font-face {
-    font-family: 'AldotheApache';
-    src: url("/fonts/AldotheApache.woff") format("woff");
-
-}*/
-
 h1{
     font-family: 'aldo_the_apacheregular', Arial, sans-serif;
     color: #fff;
@@ -72,7 +66,7 @@ a{
 }
 
 section{
-    background-image: url(/images/noisebg.jpg);
+    background-image: url(../images/noisebg.jpg);
     height: 100vh;
     position:center
 }
