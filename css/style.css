@@ -41,14 +41,14 @@ html{
     background-color: rgb(7, 7, 7);
 }
 
-@font-face {
+/*@font-face {
     font-family: 'AldotheApache';
     src: url("/fonts/AldotheApache.woff") format("woff");
 
-}
+}*/
 
 h1{
-    font-family: 'AldotheApache', Arial, sans-serif;
+    font-family: 'aldo_the_apacheregular', Arial, sans-serif;
     color: #fff;
 }
 
@@ -74,7 +74,7 @@ a{
 }
 
 .navbar a{
-    font-family: 'AldotheApache', Arial, sans-serif;
+    font-family: 'aldo_the_apacheregular', Arial, sans-serif;
     font-size: 150%;
     margin: 0px 20px;
     color: #fff !important;
@@ -131,13 +131,13 @@ header{
 }
 
 .home-title h1{
-    font-family: 'AldotheApache', Arial, sans-serif;
+    font-family: 'aldo_the_apacheregular', Arial, sans-serif;
     color: #fff;
     font-size: 500%;
 }
 
 .home-title h2{
-    font-family: 'AldotheApache', Arial, sans-serif;
+    font-family: 'aldo_the_apacheregular', Arial, sans-serif;
     color: #fff;
     font-size: 500%;
     margin-left: 220px;
@@ -160,7 +160,7 @@ header{
 .btn{
     display: inline-block;
     color:#fff;
-    font-family: 'AldotheApache', Arial, sans-serif;
+    font-family: 'aldo_the_apacheregular', Arial, sans-serif;
     letter-spacing: 2px;
     font-size: 150%;
     text-decoration: none;
